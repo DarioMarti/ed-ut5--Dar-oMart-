@@ -1,6 +1,7 @@
 public class libro {
     private String nombre;
     private String autor;
+    private Publicacion publicacion;
 
     public libro(){}
 
@@ -16,4 +17,12 @@ public class libro {
     public String getAutor(){
         return this.autor;
     }
+
+    public void setPublicacion(Publicacion publicacion){
+        this.publicacion = publicacion;
+    }
+    public Publicacion getPublicacion(){
+        return this.publicacion;
+    }
+
 }

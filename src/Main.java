@@ -22,6 +22,15 @@ public class Main {
             System.out.println("¿Cuál es el autor del libro?");
             nuevoLibro.setAutor(scanner.nextLine());
 
+            Publicacion publicacion = new Publicacion();
+
+            // Preguntar por el año de publicación del libro
+            System.out.println("¿Cuál es el año de publicación del libro?");
+            publicacion.setAnoPublicacion(Integer.parseInt(scanner.nextLine()));
+
+            // Asociar la publicación con el libro
+            nuevoLibro.setPublicacion(publicacion);
+
             // Agregar el nuevo libro a la lista
             listaLibros.add(nuevoLibro);
 
